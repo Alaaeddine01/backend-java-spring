@@ -14,9 +14,22 @@ public class DemoController {
     public DemoController(Animal animal){
         this.animal = animal;
     }
+
+    /*
+    behind the scenes for the construction injection:
+
+    Animal animal = new Cat();
+    DemoController demoController = new DemoController(animal);
+
+
+
+     */
+
+
     @GetMapping("/sounds")
     public String animalMakeSound(){
         return animal.animalMakeSound();
     }
+
 
 }
