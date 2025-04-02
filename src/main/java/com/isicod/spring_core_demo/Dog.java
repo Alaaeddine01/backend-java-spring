@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 @Primary
 public class Dog implements Animal {
+    public Dog() {
+        System.out.println("In construction : "+getClass().getSimpleName());
+    }
 
     @Override
     public String animalMakeSound() {

@@ -4,13 +4,15 @@ package com.isicod.spring_core_demo;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Cat implements Animal{
-    public Cat() {
+public class Bird implements Animal{
+
+    public Bird(){
         System.out.println("In construction : "+getClass().getSimpleName());
     }
 
+
     @Override
     public String animalMakeSound() {
-        return "The Cat make some sounds...";
+        return "The Bird make some sounds...";
     }
 }
