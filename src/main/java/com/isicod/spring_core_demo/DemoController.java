@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     private Animal animal;
-
+    // @Qualifier has higher priority than @Primary
     @Autowired
     public DemoController( @Qualifier("cat") Animal animal){
         this.animal = animal;
