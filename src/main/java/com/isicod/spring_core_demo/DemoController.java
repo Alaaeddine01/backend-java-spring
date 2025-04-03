@@ -19,7 +19,7 @@ public class DemoController {
     /*
     behind the scenes for the construction injection:
 
-    Animal animal = new Cat();
+    Animal animal = new Cat(); //Cat class implement the Animal interface !
     DemoController demoController = new DemoController(animal);
 
 
